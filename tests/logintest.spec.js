@@ -7,6 +7,15 @@ test.describe('login tests', () => {
 
 
     test('login with valid credentials', async ({ page }) => {
+        // Validate environment variables
+        const username = process.env.TEST_USERNAME;
+        const password = process.env.TEST_PASSWORD;
+
+        if (!username || !password) {
+            throw new Error(
+                'TEST_USERNAME or TEST_PASSWORD environment variable is missing'
+            );
+        }
         const poManager = new POManager(page);
         const loginPage = poManager.loginPage;
         await loginPage.login(process.env.TEST_USERNAME, process.env.TEST_PASSWORD);

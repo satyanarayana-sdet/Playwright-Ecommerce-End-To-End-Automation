@@ -2,7 +2,6 @@
 // @ts-check
 
 require('dotenv').config();
-console.log(process.env.BASE_URL);
 
 const { defineConfig, devices } = require('@playwright/test');
 
