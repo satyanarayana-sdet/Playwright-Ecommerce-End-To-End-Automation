@@ -29,7 +29,7 @@ const config = defineConfig({
 
     browserName: 'chromium',
 
-    headless: false,
+    headless: true,
 
     screenshot: 'on',
 
