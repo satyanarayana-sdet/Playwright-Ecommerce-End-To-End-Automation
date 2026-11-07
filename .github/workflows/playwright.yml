@@ -1,10 +1,12 @@
+
 name: Playwright Tests
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
+
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
 
 jobs:
   test:
@@ -12,28 +14,39 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - uses: actions/setup-node@v4
-      with:
-        node-version: lts/*
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
 
-    - name: Run Playwright tests
-      run: npx playwright test
-      env:
-        BASE_URL: ${{ secrets.BASE_URL }}
-        TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
-        TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+      - name: Verify environment variables
+        run: |
+          test -n "$BASE_URL" || (echo "BASE_URL missing" && exit 1)
+          test -n "$TEST_USERNAME" || (echo "TEST_USERNAME missing" && exit 1)
+          test -n "$TEST_PASSWORD" || (echo "TEST_PASSWORD missing" && exit 1)
+          echo "All environment variables are configured"
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
+          TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
-    - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: playwright-report
-        path: playwright-report/
-        retention-days: 30
+      - name: Run Playwright tests
+        run: npx playwright test
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
+          TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
