@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Playwright test results
+/test-results/
+/playwright-report/
+/blob-report/
+
+# Playwright cache and authentication
+/playwright/.cache/
+/playwright/.auth/
+
+# Debug logs
+npm-debug.log*

@@ -1,0 +1,272 @@
+- generic [active] [ref=f11e1]:
+  - banner [ref=f11e2]:
+    - generic [ref=f11e5]:
+      - link [ref=f11e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for automation practice" [ref=f11e9]
+      - list [ref=f11e12]:
+        - listitem [ref=f11e13]:
+          - link " Home" [ref=f11e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=f11e15]: 
+            - text: Home
+        - listitem [ref=f11e16]:
+          - link " Products" [ref=f11e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=f11e18]: 
+            - text: Products
+        - listitem [ref=f11e19]:
+          - link " Cart" [ref=f11e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=f11e21]: 
+            - text: Cart
+        - listitem [ref=f11e22]:
+          - link " Signup / Login" [ref=f11e23] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=f11e24]: 
+            - text: Signup / Login
+        - listitem [ref=f11e25]:
+          - link " Test Cases" [ref=f11e26] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=f11e27]: 
+            - text: Test Cases
+        - listitem [ref=f11e28]:
+          - link " API Testing" [ref=f11e29] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=f11e30]: 
+            - text: API Testing
+        - listitem [ref=f11e31]:
+          - link " Video Tutorials" [ref=f11e32] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=f11e33]: 
+            - text: Video Tutorials
+        - listitem [ref=f11e34]:
+          - link " Contact us" [ref=f11e35] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=f11e36]: 
+            - text: Contact us
+  - generic [ref=f11e38]:
+    - list [ref=f11e40]:
+      - listitem [ref=f11e41]:
+        - link "Products" [ref=f11e42] [cursor=pointer]:
+          - /url: /products
+      - listitem [ref=f11e43]: Men > Tshirts
+    - generic [ref=f11e44]:
+      - generic [ref=f11e45]:
+        - generic [ref=f11e46]:
+          - heading "Category" [level=2] [ref=f11e47]
+          - generic [ref=f11e48]:
+            - heading [level=4] [ref=f11e51]:
+              - link " Women" [ref=f11e52] [cursor=pointer]:
+                - /url: "#Women"
+                - generic [ref=f11e53]: 
+                - text: Women
+            - heading [level=4] [ref=f11e57]:
+              - link " Men" [ref=f11e58] [cursor=pointer]:
+                - /url: "#Men"
+                - generic [ref=f11e59]: 
+                - text: Men
+            - heading [level=4] [ref=f11e63]:
+              - link " Kids" [ref=f11e64] [cursor=pointer]:
+                - /url: "#Kids"
+                - generic [ref=f11e65]: 
+                - text: Kids
+          - generic [ref=f11e67]:
+            - heading "Brands" [level=2] [ref=f11e68]
+            - list [ref=f11e70]:
+              - listitem [ref=f11e71]:
+                - link "(6) Polo" [ref=f11e72] [cursor=pointer]:
+                  - /url: /brand_products/Polo
+                  - generic [ref=f11e73]: (6)
+                  - text: Polo
+              - listitem [ref=f11e74]:
+                - link "(5) H&M" [ref=f11e75] [cursor=pointer]:
+                  - /url: /brand_products/H&M
+                  - generic [ref=f11e76]: (5)
+                  - text: H&M
+              - listitem [ref=f11e77]:
+                - link "(5) Madame" [ref=f11e78] [cursor=pointer]:
+                  - /url: /brand_products/Madame
+                  - generic [ref=f11e79]: (5)
+                  - text: Madame
+              - listitem [ref=f11e80]:
+                - link "(3) Mast & Harbour" [ref=f11e81] [cursor=pointer]:
+                  - /url: /brand_products/Mast & Harbour
+                  - generic [ref=f11e82]: (3)
+                  - text: Mast & Harbour
+              - listitem [ref=f11e83]:
+                - link "(4) Babyhug" [ref=f11e84] [cursor=pointer]:
+                  - /url: /brand_products/Babyhug
+                  - generic [ref=f11e85]: (4)
+                  - text: Babyhug
+              - listitem [ref=f11e86]:
+                - link "(3) Allen Solly Junior" [ref=f11e87] [cursor=pointer]:
+                  - /url: /brand_products/Allen Solly Junior
+                  - generic [ref=f11e88]: (3)
+                  - text: Allen Solly Junior
+              - listitem [ref=f11e89]:
+                - link "(3) Kookie Kids" [ref=f11e90] [cursor=pointer]:
+                  - /url: /brand_products/Kookie Kids
+                  - generic [ref=f11e91]: (3)
+                  - text: Kookie Kids
+              - listitem [ref=f11e92]:
+                - link "(5) Biba" [ref=f11e93] [cursor=pointer]:
+                  - /url: /brand_products/Biba
+                  - generic [ref=f11e94]: (5)
+                  - text: Biba
+        - insertion [ref=f11e96]:
+          - iframe [ref=f11e98]:
+            - iframe [ref=f18e1]:
+              - generic [ref=f22e2]:
+                - iframe [ref=f22e3] [cursor=pointer]
+                - link [ref=f22e4] [cursor=pointer]:
+                  - /url: https://insight.adsrvr.org/track/clk?imp=b833bf2e-837d-4060-8859-cad12968dcba&ag=gon087p&sfe=1d242806&sig=lrukEYz0PZAJDsFgynNJNnltJ52gQCbGvjPhMpSJoMg.&crid=f8ghvnlw&cf=11057586&fq=0&t=1&td_s=automationexercise.com&rcats=&mste=&mfld=3&mssi=&mfsi=&sv=google&uhow=117&agsa=&wp=auyoBgAF3rcBc8ugACgza_aO9DDNFOudy9nYmw&rgz=518003&dt=PC&osf=Windows&os=Windows10&br=Chrome&svpid=pub-1677597403311019&rlangs=en&mlang=&did=&rcxt=Other&tmpc=26.83000000000004&vrtd=&osi=&osv=&daid=&dnr=0&vpb=&crrelr=&npt=&cc=3~KLUv_WPYfRZoMwIVDgD0ES6_M7h9g2BAEYhZytEpaNy6Qgdnb24wODdwSOzRlA5QsvOiBVoIZjhnaHZubHdgz6y-G29uQ0I3S1R2LVd6LWU3blptRmxhSzdMNHUYQW5kaHJsb3JlIglQYW5kKgY1MTgwMDGa5N2O46E9GCAydGVmcjQ00ALV2pUDoy9_U9QtQ1JNMi2knojK_NfdPwqrs4n0h_rw-tUBEIDChIEWRjlLTU5rRmU1eU8tU05xOFBDR1cxMnNiloAm8XCF5PKk-lTONy3UuPlLEb9HzkXPVR35iN2y2vvDHRgipJjndPgOktiZsLzF3f0Lrr9ABwiDtZwDmBMAqBM8yBM80BMA_RMlBpE_gBQBoBQAsBQAuBQAyBQA6hTwFJEBshUA2BUALvw0QWaHw4UQNanKhVxacTi0DGFdAl0VWN1xsEZYVwCX-LItTDEG8NxQIbIWAq6FDsHAtj8ijd8h8lSBUcgAjQkBcx91OTSsM4s3ig6cHH7zOcfWZQcgO2HTVIuSk5uEURK8doL_iumguokkYzOgJikZqwbwFvwFSYRY9YmnS6C6cypH__pxiFm3jDY_XVoxdc7KTbaZ2qhKnGfFoilLwwI.&dur=2~KLUv_SMNLtZUXWUAACDiOTM-AQD2yjZpIA..&durs=KQqGHH&bdc=13&testid=-CRM2-&fpa=499&pcm=3&ict=Unknown&said=F9KMNkFe5yO-SNq8PCGW1w&auct=1&tail=1&r=https://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCPFNmBqjsare9F6CXz7sP6-agkQG-p-f2dPb-j45XwI23ARABIP20npUBYOWCgICYDsgBCagDAcgDAqoE6QFP0A40HB8mI0-JlP3wQRbaWmqOEHVGURE8CtrQHkwGJq8qYOKPSehyvBpTcHCreEwYE76PtEbkDWcAAjdMMBCwgvN3UrWuurYV-d6YqLyNdUg2IZZHuTsiVoktw_cVtKxNv26qjl4ZICEA0JVbrtKdG973REQAMhrpFEHdjCqgNE6EA4Zl7vFzmi6zZNr8CgqRprnZ00qSsrX2qQPXS44_tMnv06QK8ZlmRtQaZjL0kUGrscQW0oinWkLYvpqQRh_R8UEumVYNs6Q209nR1ROInt4ZH0lzyUds3IsuOremIFEBnCPyndbAq4AGjrnDxIaN2btNoAYhqAeT2LECqAeU2LECqAeV2LECqAep67ECqAemvhuoB5bYG6gHqpuxAqgH_56xAqgH35-xAqgH_uixAqgHrb6xAqgHv9OxAtgHANIIMAiAYRABMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY06DttpnxlwNgAPoLAggBgAwBqg0CSU7qDRMI7dzttpnxlwMVoMtzAR1rMygSiA4J0BUBgBcBshcEGAxQAQ%26num%3D1%26sig%3DAOD64_2ZU8jF1Ql1si54nH1rUsEPhBWdWA%26adurl%3Dhttps://netshort.onelink.me/XC68?pid=thetradedesk_int&af_siteid=automationexercise.com&c=2tefr44&af_c_id=2tefr44&af_adset_id=gon087p&af_ad_id=f8ghvnlw&af_sub5=%%IAA%%&af_click_lookback=7d&af_os_version=2&af_model=&clickid=b833bf2e-837d-4060-8859-cad12968dcba&idfa=&af_sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0aGV0cmFkZWRlc2tfaW50IiwiYXVkIjpbImNsaWNrIl0sInZlciI6InYxIiwiaWF0IjoxNzkzODk0NDA2LCJleHAiOjE3OTM4OTgwMDYsImp0aSI6ImI4MzNiZjJlLTgzN2QtNDA2MC04ODU5LWNhZDEyOTY4ZGNiYSIsInN1YiI6IlhDNjgiLCJwYXJhbXMiOnsicGlkIjoidGhldHJhZGVkZXNrX2ludCIsImMiOiIydGVmcjQ0IiwiYWZfc2l0ZWlkIjoiYXV0b21hdGlvbmV4ZXJjaXNlLmNvbSIsImFmX3N1YjUiOiIlJUlBQSUlIn19.Uk2TMs3XJ7WmrQo_9H15X3MpzWpLt2YZE2BqOJg2xGU
+      - generic [ref=f11e100]:
+        - heading "Men - Tshirts Products" [level=2] [ref=f11e101]
+        - generic [ref=f11e103]:
+          - generic [ref=f11e104]:
+            - generic [ref=f11e105]:
+              - img "ecommerce website products" [ref=f11e106]
+              - heading "Rs. 400" [level=2] [ref=f11e107]
+              - paragraph [ref=f11e108]: Men Tshirt
+              - link " Add to cart" [ref=f11e109] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e110]: 
+                - text: Add to cart
+            - generic [ref=f11e111]:
+              - heading "Rs. 400" [level=2] [ref=f11e112]
+              - paragraph [ref=f11e113]: Men Tshirt
+              - link " Add to cart" [ref=f11e114] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e115]: 
+                - text: Add to cart
+          - list [ref=f11e117]:
+            - listitem [ref=f11e118]:
+              - link " View Product" [ref=f11e119] [cursor=pointer]:
+                - /url: /product_details/2
+                - generic [ref=f11e120]: 
+                - text: View Product
+        - generic [ref=f11e122]:
+          - generic [ref=f11e123]:
+            - generic [ref=f11e124]:
+              - img "ecommerce website products" [ref=f11e125]
+              - heading "Rs. 1299" [level=2] [ref=f11e126]
+              - paragraph [ref=f11e127]: Pure Cotton V-Neck T-Shirt
+              - link " Add to cart" [ref=f11e128] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e129]: 
+                - text: Add to cart
+            - generic [ref=f11e130]:
+              - heading "Rs. 1299" [level=2] [ref=f11e131]
+              - paragraph [ref=f11e132]: Pure Cotton V-Neck T-Shirt
+              - link " Add to cart" [ref=f11e133] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e134]: 
+                - text: Add to cart
+          - list [ref=f11e136]:
+            - listitem [ref=f11e137]:
+              - link " View Product" [ref=f11e138] [cursor=pointer]:
+                - /url: /product_details/28
+                - generic [ref=f11e139]: 
+                - text: View Product
+        - generic [ref=f11e141]:
+          - generic [ref=f11e142]:
+            - generic [ref=f11e143]:
+              - img "ecommerce website products" [ref=f11e144]
+              - heading "Rs. 1000" [level=2] [ref=f11e145]
+              - paragraph [ref=f11e146]: Green Side Placket Detail T-Shirt
+              - link " Add to cart" [ref=f11e147] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e148]: 
+                - text: Add to cart
+            - generic [ref=f11e149]:
+              - heading "Rs. 1000" [level=2] [ref=f11e150]
+              - paragraph [ref=f11e151]: Green Side Placket Detail T-Shirt
+              - link " Add to cart" [ref=f11e152] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e153]: 
+                - text: Add to cart
+          - list [ref=f11e155]:
+            - listitem [ref=f11e156]:
+              - link " View Product" [ref=f11e157] [cursor=pointer]:
+                - /url: /product_details/29
+                - generic [ref=f11e158]: 
+                - text: View Product
+        - generic [ref=f11e160]:
+          - generic [ref=f11e161]:
+            - generic [ref=f11e162]:
+              - img "ecommerce website products" [ref=f11e163]
+              - heading "Rs. 1500" [level=2] [ref=f11e164]
+              - paragraph [ref=f11e165]: Premium Polo T-Shirts
+              - link " Add to cart" [ref=f11e166] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e167]: 
+                - text: Add to cart
+            - generic [ref=f11e168]:
+              - heading "Rs. 1500" [level=2] [ref=f11e169]
+              - paragraph [ref=f11e170]: Premium Polo T-Shirts
+              - link " Add to cart" [ref=f11e171] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e172]: 
+                - text: Add to cart
+          - list [ref=f11e174]:
+            - listitem [ref=f11e175]:
+              - link " View Product" [ref=f11e176] [cursor=pointer]:
+                - /url: /product_details/30
+                - generic [ref=f11e177]: 
+                - text: View Product
+        - generic [ref=f11e179]:
+          - generic [ref=f11e180]:
+            - generic [ref=f11e181]:
+              - img "ecommerce website products" [ref=f11e182]
+              - heading "Rs. 850" [level=2] [ref=f11e183]
+              - paragraph [ref=f11e184]: Pure Cotton Neon Green Tshirt
+              - link " Add to cart" [ref=f11e185] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e186]: 
+                - text: Add to cart
+            - generic [ref=f11e187]:
+              - heading "Rs. 850" [level=2] [ref=f11e188]
+              - paragraph [ref=f11e189]: Pure Cotton Neon Green Tshirt
+              - link " Add to cart" [ref=f11e190] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e191]: 
+                - text: Add to cart
+          - list [ref=f11e193]:
+            - listitem [ref=f11e194]:
+              - link " View Product" [ref=f11e195] [cursor=pointer]:
+                - /url: /product_details/31
+                - generic [ref=f11e196]: 
+                - text: View Product
+        - generic [ref=f11e198]:
+          - generic [ref=f11e199]:
+            - generic [ref=f11e200]:
+              - img "ecommerce website products" [ref=f11e201]
+              - heading "Rs. 1389" [level=2] [ref=f11e202]
+              - paragraph [ref=f11e203]: GRAPHIC DESIGN MEN T SHIRT - BLUE
+              - link " Add to cart" [ref=f11e204] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e205]: 
+                - text: Add to cart
+            - generic [ref=f11e206]:
+              - heading "Rs. 1389" [level=2] [ref=f11e207]
+              - paragraph [ref=f11e208]: GRAPHIC DESIGN MEN T SHIRT - BLUE
+              - link " Add to cart" [ref=f11e209] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=f11e210]: 
+                - text: Add to cart
+          - list [ref=f11e212]:
+            - listitem [ref=f11e213]:
+              - link " View Product" [ref=f11e214] [cursor=pointer]:
+                - /url: /product_details/43
+                - generic [ref=f11e215]: 
+                - text: View Product
+  - contentinfo [ref=f11e216]:
+    - generic [ref=f11e221]:
+      - heading "Subscription" [level=2] [ref=f11e222]
+      - generic [ref=f11e223]:
+        - textbox "Your email address" [ref=f11e224]
+        - button "" [ref=f11e225] [cursor=pointer]
+        - paragraph [ref=f11e227]: Get the most recent updates from our site and be updated your self...
+    - paragraph [ref=f11e231]: Copyright © 2021 All rights reserved
+  - text: 
