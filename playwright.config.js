@@ -23,6 +23,9 @@ module.exports = defineConfig({
     browserName: 'chromium',
 
     headless: true,
+    launchOptions: {
+      headless: true,
+    },
 
     screenshot: 'only-on-failure',
 

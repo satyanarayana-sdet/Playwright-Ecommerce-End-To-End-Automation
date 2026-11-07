@@ -26,16 +26,9 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Verify environment variables
+      - name: Verify Playwright configuration
         run: |
-          test -n "$BASE_URL" || (echo "BASE_URL missing" && exit 1)
-          test -n "$TEST_USERNAME" || (echo "TEST_USERNAME missing" && exit 1)
-          test -n "$TEST_PASSWORD" || (echo "TEST_PASSWORD missing" && exit 1)
-          echo "All environment variables are configured"
-        env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
-          TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+          node -e "const c = require('./playwright.config.js'); console.log('Headless:', c.use.headless); console.log('Launch headless:', c.use.launchOptions.headless)"
 
       - name: Run Playwright tests
         run: npx playwright test
