@@ -7,6 +7,7 @@ class LoginPage extends BasePage {
     this.usernameInput = page.getByPlaceholder('Email Address').first();
     this.passwordInput = page.getByPlaceholder('Password').first();
     this.loginButton = page.getByRole('button', { name: 'Login' });
+    this.loginErrorMessage = page.getByText('Your email or password is incorrect!', { exact: true });
 
   }
 
@@ -32,11 +33,7 @@ class LoginPage extends BasePage {
   
   async login(username, password) {
     await this.open();
-
-    await this.usernameInput.fill(username);
-    await this.passwordInput.fill(password);
-
-    await this.loginButton.click();
+    await this.submitLogin(username, password);
 
     await this.page.getByText('Logged in as').waitFor({
       state: 'visible'
@@ -44,6 +41,18 @@ class LoginPage extends BasePage {
 
     console.log('Login done');
   }
+
+  async submitLogin(username, password) {
+    await this.usernameInput.fill(username);
+    await this.passwordInput.fill(password);
+
+    await this.loginButton.click();
+  }
+
+  getLoginErrorMessage() {
+    return this.loginErrorMessage;
+  }
+
   async isLoggedIn() {
     return await this.page.getByText('Logged in as').isVisible();
   }
