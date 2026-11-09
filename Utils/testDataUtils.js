@@ -18,3 +18,16 @@ exports.customtest = base.test.extend({
     }
 
 });
+
+exports.loginTestData = [
+    {
+        description: 'unregistered email',
+        username: 'unknown.user.one@example.com',
+        password: 'wrongpassword'
+    },
+    {
+        description: 'another unregistered email',
+        username: 'unknown.user.two@example.com',
+        password: 'wrongpassword'
+    }
+];
