@@ -23,6 +23,41 @@ class ProductAssignPage extends BasePage {
 
     return selectedProductName;
   }
+  async proceedToCheckout() {
+    const proceedToCheckoutButton = this.page.getByText('Proceed To Checkout', { exact: true });
+    await proceedToCheckoutButton.waitFor({ state: 'visible' });
+    await proceedToCheckoutButton.click();
+  }
+  async placeOrder() {
+    const placeOrderButton = this.page.getByText('Place Order', { exact: true });
+    await placeOrderButton.waitFor({ state: 'visible' });
+    await placeOrderButton.click();
+  }
+  async fillpaymentDetails(name, card_number, cvc, expiry_month, expiry_year) {
+
+    const cardName = this.page.locator('input[name="name_on_card"]');
+    await cardName.fill(name);
+
+    const cardNumber = this.page.locator('input[name="card_number"]');
+    await cardNumber.fill(card_number);
+
+    const cvcField = this.page.locator('input[placeholder="ex. 311"]');
+    await cvcField.fill(cvc);
+
+    const expiryMonth = this.page.locator('input[placeholder="MM"]');
+    await expiryMonth.fill(expiry_month);
+
+    const expiryYear = this.page.locator('input[placeholder="YYYY"]');
+    await expiryYear.fill(expiry_year);
+
+    const payAndConfirmOrderButton = this.page.getByText(
+        'Pay and Confirm Order',
+        { exact: true }
+    );
+
+    await payAndConfirmOrderButton.waitFor({ state: 'visible' });
+    await payAndConfirmOrderButton.click();
+}
 }
 
 module.exports = ProductAssignPage;
