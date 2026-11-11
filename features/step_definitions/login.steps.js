@@ -1,19 +1,12 @@
 const { Given, Then, When } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
-const { loginTestData } = require('../../Utils/testDataUtils');
 
 Given('I am on the login page', async function () {
     await this.loginPage.open();
 });
 
-When('I submit the {string} login data', async function (description) {
-    const testData = loginTestData.find((sample) => sample.description === description);
-
-    if (!testData) {
-        throw new Error(`No login test data found for "${description}"`);
-    }
-
-    await this.loginPage.submitLogin(testData.username, testData.password);
+When('I submit login with email {string} and password {string}', async function (email, password) {
+    await this.loginPage.submitLogin(email, password);
 });
 
 Then('I should see the invalid login message', async function () {

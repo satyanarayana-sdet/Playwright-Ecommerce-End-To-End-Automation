@@ -32,4 +32,19 @@ module.exports = defineConfig({
     trace: 'retain-on-failure',
   },
 
+  projects: [
+    {
+      name: 'setup',
+      testMatch: /auth\.setup\.js/,
+      use: {
+        baseURL: 'https://automationexercise.com',
+      },
+    },
+    {
+      name: 'chromium',
+      dependencies: ['setup'],
+      testIgnore: /auth\.setup\.js/,
+    },
+  ],
+
 });
